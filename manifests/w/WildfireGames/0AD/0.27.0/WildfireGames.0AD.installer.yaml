@@ -1,0 +1,12 @@
+# Created using wingetcreate 1.9.4.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: WildfireGames.0AD
+PackageVersion: 0.27.0
+InstallerType: nullsoft
+Installers:
+- Architecture: x86
+  InstallerUrl: https://releases.wildfiregames.com/0ad-0.27.0-win32.exe
+  InstallerSha256: AC8EE7FAF8514317F956C2F8B51934EDF23BCD01B23E1A391FEEE88FB0DA20E7
+ManifestType: installer
+ManifestVersion: 1.9.0

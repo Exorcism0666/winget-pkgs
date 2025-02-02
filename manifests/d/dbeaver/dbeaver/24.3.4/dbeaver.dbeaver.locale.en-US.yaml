@@ -1,0 +1,89 @@
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: dbeaver.dbeaver
+PackageVersion: 24.3.4
+PackageLocale: en-US
+Publisher: DBeaver Corp
+PublisherUrl: https://github.com/dbeaver
+PublisherSupportUrl: https://github.com/dbeaver/dbeaver/issues
+Author: DBeaver Corp
+PackageName: DBeaver Community Edition
+PackageUrl: https://dbeaver.io/
+License: Apache-2.0
+LicenseUrl: https://github.com/dbeaver/dbeaver/blob/HEAD/LICENSE.md
+ShortDescription: dbeaver.dbeaver
+Description: Free multi-platform database tool for developers, database administrators, analysts and all people who need to work with databases. Supports all popular databases (MySQL, PostgreSQL, SQLite, Oracle, DB2, SQL Server, Sybase, MS Access, Teradata, Firebird, Apache Hive, Phoenix, Presto, etc)
+Moniker: dbeaver
+Tags:
+- apache-hive
+- database
+- db2
+- firebird
+- ms-access
+- mysql
+- oracle
+- phoenix
+- postgresql
+- presto
+- sql-server
+- sqlite
+- sybase
+- teradata
+- tool
+ReleaseNotes: |-
+  - SQL Editor:
+                  - Added the ability to use multi-line variables in SQL scripts
+                  - New autocompletion engine was improved and enabled by default:
+                      - Autocomplete performance was significantly improved
+                      - Fixed an issue with autocomplete failure after the dot
+                      - Fixed autocomplete for JOIN conditions
+                      - Fixed an issue with not executed included scripts
+                      - Fixed alias case sensitivity in autocomplete
+                      - Changed an icon for derived column in autocompletion proposals
+              - ER Diagram: added the ability to generate SQL with INNER JOIN and SIMPLE JOIN from a diagram
+              - Query Manager: query duration formatting was fixed
+              - Data Editor:
+                  - Fixed an issue where unchanged cells were incorrectly marked as updated after pasting data
+                  - Fixed row coloring when querying multiple tables
+              - Data transfer: removed the ability to change data type for existing columns in Data Export
+              - Database Navigator: database object filter was improved. Connection filter is enabled by default
+              - Miscellaneous:
+                  - We migrated to the Java 21
+                  - Added the ability to associate different file types with DBeaver on Windows and macOS
+                  - Bookmark vew is now working again
+                  - Font in error messages was changed to monospace
+                  - Commit/Rollback monitor was fixed
+                  - Fixed bold font display for theming on macOS
+              - Databases:
+                  - Azure Databricks: information_schema was added to Database Navigator
+                  - Databend: icons were updated
+                  - CUBRID:
+                      - Fixed index creation preview
+                      - Fixed column creation with STRING and similar data types
+                      - Procedure, function, and view names are now displayed in lowercase
+                      - Added the ability to change comment for foreign key columns
+                  - LibSQL: UI for token-based authentication was added
+                  - Machbase: driver was updated to version 8.0.2
+                  - MySQL/MariaDB: explain plan now works for all types of SQL queries
+                  - Oracle:
+                      - Fixed DDL generation for table spaces
+                      - Fixed user password changing
+                  - PostgreSQL: fixed an issue with disappearing ENUM definition after the refresh in Metadata editor
+                  - Salesforce Data Cloud:
+                      - Removed the ability of edit database metadata
+                      - The latest driver version is now downloaded by default
+                  - SAP HANA: partition view was added
+                  - SQLite: STRICT mode support was added
+                  - SQL Server:
+                      - Index creation was fixed
+                      - Fixed an issue where the index type couldn't be changed to unique
+                  - Teradata:
+                      - XML column value save was fixed
+                      - Removed incorrect warning message after executing SHOW and similar queries
+ReleaseNotesUrl: https://github.com/dbeaver/dbeaver/releases/tag/24.3.4
+Documentations:
+- DocumentLabel: Wiki
+  DocumentUrl: https://github.com/dbeaver/dbeaver/wiki
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

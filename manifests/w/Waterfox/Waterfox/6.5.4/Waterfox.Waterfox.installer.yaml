@@ -1,0 +1,40 @@
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Waterfox.Waterfox
+PackageVersion: 6.5.4
+InstallerLocale: en-US
+Platform:
+- Windows.Desktop
+InstallerType: nullsoft
+Scope: machine
+InstallModes:
+- interactive
+- silent
+UpgradeBehavior: install
+Protocols:
+- http
+- https
+- mailto
+FileExtensions:
+- avif
+- htm
+- html
+- pdf
+- shtml
+- svg
+- webp
+- xht
+- xhtml
+ProductCode: Waterfox 115.16.0 (x64 en-US)
+ReleaseDate: 2025-02-04
+AppsAndFeaturesEntries:
+- DisplayName: Waterfox (x64 en-US)
+  ProductCode: Waterfox 115.16.0 (x64 en-US)
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x64
+  InstallerUrl: https://cdn1.waterfox.net/waterfox/releases/6.5.4/WINNT_x86_64/Waterfox%20Setup%206.5.4.exe
+  InstallerSha256: 37D57DC1934CB1BB750C00B32B398B8A5DFC44CEEA8888EC1C005743785E24B4
+ManifestType: installer
+ManifestVersion: 1.9.0

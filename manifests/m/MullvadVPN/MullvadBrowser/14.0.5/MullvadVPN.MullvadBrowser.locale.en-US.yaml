@@ -1,0 +1,34 @@
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: MullvadVPN.MullvadBrowser
+PackageVersion: 14.0.5
+PackageLocale: en-US
+Publisher: Mullvad VPN
+PublisherUrl: https://github.com/mullvad
+PublisherSupportUrl: https://github.com/mullvad/mullvad-browser/issues
+PrivacyUrl: https://mullvad.net/en/help/privacy-policy
+PackageName: Mullvad Browser
+PackageUrl: https://mullvad.net/en/browser
+License: MPL-2.0 License
+LicenseUrl: https://www.mozilla.org/en-US/MPL/2.0
+ShortDescription: Privacy-focused browser for Linux, macOS and Windows.
+ReleaseNotes: |-
+  All Platforms
+  - Updated Firefox to 128.7.0esr
+  - Updated Mullvad Browser Extension to 0.9.4
+  - Updated uBlock Origin to 1.62.0
+  - Bug 390: Rebase Mullvad Browser release onto Firefox 128.7.0esr [mullvad-browser]
+  - Bug 41065: navigator.storage "best effort" + "persistent" leak partitionSize/totalSpace entropy [tor-browser]
+  - Bug 43386: Extension requests expose Firefox's minor version and custom app name [tor-browser]
+  - Bug 43451: Backport security fixes from Firefox 135 [tor-browser]
+  Linux
+  - Bug 43236: High refresh rate detectable by websites when Wayland (MOZ_ENABLE_WAYLAND=1) is used [tor-browser]
+  Build System
+  All Platforms
+  - Bug 41324: Improve build signing ergonomics [tor-browser-build]
+  - Bug 41343: Add signing step to clean some files such as test artifacts [tor-browser-build]
+  - Bug 41350: Increase timeout in rcodesign-notary-submit [tor-browser-build]
+ReleaseNotesUrl: https://github.com/mullvad/mullvad-browser/releases/tag/14.0.5
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

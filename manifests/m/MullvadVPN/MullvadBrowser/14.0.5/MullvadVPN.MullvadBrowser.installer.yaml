@@ -1,0 +1,20 @@
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: MullvadVPN.MullvadBrowser
+PackageVersion: 14.0.5
+InstallerLocale: en-US
+InstallerType: nullsoft
+Scope: user
+ReleaseDate: 2025-02-05
+InstallationMetadata:
+  DefaultInstallLocation: '%LocalAppData%\Mullvad\MullvadBrowser\Release'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/mullvad/mullvad-browser/releases/download/14.0.5/mullvad-browser-windows-x86_64-14.0.5.exe
+  InstallerSha256: 0AAE4E920E1A2E06B5A6B4C5CB74CAF06CB4B11E157F5C061B7BEF9F6E71D586
+- Architecture: x64
+  InstallerUrl: https://github.com/mullvad/mullvad-browser/releases/download/14.0.5/mullvad-browser-windows-x86_64-14.0.5.exe
+  InstallerSha256: 0AAE4E920E1A2E06B5A6B4C5CB74CAF06CB4B11E157F5C061B7BEF9F6E71D586
+ManifestType: installer
+ManifestVersion: 1.9.0
